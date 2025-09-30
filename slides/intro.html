@@ -7466,11 +7466,12 @@ mkdir<span class="w"> </span>python_course_2025<span class="w"> </span><span cla
 </pre></div>
 </li>
 <li><p>Download and unzip in the folder <a href="https://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip">data files that we will need</a>.</p>
-</li>
-</ul>
 <div class="highlight"><pre><span></span>mv<span class="w"> </span>~/Downloads/python-novice-gapminder-data.zip<span class="w"> </span><span class="c1"># bring the zip file to new folder</span>
 unzip<span class="w"> </span>python-novice-gapminder-data.zip<span class="w"> </span><span class="c1"># unzip the file in this folder.</span>
 </pre></div>
+</li>
+</ul>
+<p>We have our directory ready to work on.</p>
 </div>
 </div>
 </div>
@@ -7532,6 +7533,7 @@ Type<span class="w"> </span><span class="s2">"help"</span>,<span class="w"> </sp
 <p>to exit it, type <code>exit()</code> in the line with <code>&gt;&gt;&gt;</code>:</p>
 <div class="highlight"><pre><span></span>&gt;&gt;&gt;<span class="w"> </span>exit<span class="o">()</span>
 </pre></div>
+<p>Yo should be back on your terminal environment. Mind the parenthesis <code>()</code>.</p>
 </div>
 </div>
 </div>
@@ -7590,11 +7592,15 @@ Type<span class="w"> </span><span class="s2">"help"</span>,<span class="w"> </sp
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Creating-and-activating-an-Environment">Creating and activating an Environment<a class="anchor-link" href="#Creating-and-activating-an-Environment">¶</a></h3><p>There are many ways, and different python environment managers (like <code>Anaconda</code>, <code>Micromamba</code>, <code>uv</code>, <code>virtualenvwrapper</code>, etc.). Choose one and get used to it! Just choose one open-source :)</p>
 <ul>
-<li>Default virtual environment manager with python 3: <a href="https://docs.python.org/3/library/venv.html"><code>venv</code> (documentation)</a></li>
-</ul>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>/path/to/new/virtual/environment
-$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/path/to/new/virtual/environment/bin/activate
+<li><p>Default virtual environment manager with python 3: <a href="https://docs.python.org/3/library/venv.html"><code>venv</code> (documentation)</a></p>
+<div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>/path/to/new/virtual/environment
+<span class="nb">source</span><span class="w"> </span>/path/to/new/virtual/environment/bin/activate
 </pre></div>
+</li>
+</ul>
+<p>The first line creates an environment in <code>/path/to/new/virtual/environment</code> (change accordingly). The second line activates the created environment by sourcing its <code>activate</code> binary executable.</p>
+<p>Creating an environment should be done once, activating it should be done everytime we want to work on that environment!</p>
+<p>If you are familiarized with bash, you can alias this <code>source ...</code> line in your <code>~./bashrc</code> to have a fast activation command.</p>
 </div>
 </div>
 </div>
@@ -7626,6 +7632,7 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/
 </ul>
 <div class="highlight"><pre><span></span>$<span class="w"> </span>which<span class="w"> </span>python<span class="w"> </span>
 </pre></div>
+<p>.</p>
 </div>
 </div>
 </div>
@@ -7639,9 +7646,8 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/
 <h2 id="Scripting-and-Running-Python">Scripting and Running Python<a class="anchor-link" href="#Scripting-and-Running-Python">¶</a></h2><p>There are multiple ways of writing and running code in Python:</p>
 <ul>
 <li><p>From the terminal, using inline code editors and executing by command line interface.</p>
-<pre><code class="language-{bash}">{bash}
-$ python my_program.py
-</code></pre>
+<div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>my_program.py
+</pre></div>
 </li>
 <li><p>Installing <code>jupyter notebook</code> or <code>jupyter lab</code> (IDE) and starting an instance by running:</p>
 <div class="highlight"><pre><span></span>$<span class="w"> </span>jupyter<span class="w"> </span>lab

@@ -87,13 +87,13 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
+<!--{% if site.carpentry == "swc" %}-->
+<!--{% include swc/intro.html %}-->
+<!--{% elsif site.carpentry == "dc" %}-->
+<!--{% include dc/intro.html %}-->
+<!--{% elsif site.carpentry == "lc" %}-->
+<!--{% include lc/intro.html %}-->
+<!--{% endif %}-->
 
 {% if site.pilot %}
 This is a pilot workshop, testing out a lesson that is still under development. The lesson authors would appreciate any feedback you can give them about the lesson content and suggestions for how it could be further improved.
@@ -226,12 +226,7 @@ WORKSHOP RECORDINGS
 
 Modify or remove the block below if you plan to record the workshop.
 {% endcomment %}
-<p id="recordings">
-  <strong>Workshop Recordings:</strong>
-  Carpentries workshops are designed to be interactive rather than lecture-based, with lessons that build upon one another.
-  To foster a positive online learning environment, we strongly recommend that participants join in real time.
-  As a result, workshop recordings are not recommended and may not be available to learners.
-</p>
+
 {% comment %}
 CONTACT EMAIL ADDRESS
 
@@ -255,12 +250,6 @@ Display the contact email address set in the configuration file.
   to-be-announced
   {% endif %}
   for more information.
-</p>
-
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
 
 {% comment %}
@@ -329,25 +318,25 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
-{% elsif site.incubator_pre_survey or site.incubator_post_survey %}
-<div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured for The Carpentries Incubator
-(the value of `curriculum` is not set to `incubator` in `_config.yml`).
-Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
-in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
-change the value of `carpentry` to `incubator`.
-</div>
-{% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% endif %}
-
+<!--<h2 id="surveys">Surveys</h2>-->
+<!--<p>Please be sure to complete these surveys before and after the workshop.</p>-->
+<!--{% if site.carpentry == "incubator" %}-->
+<!--<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>-->
+<!--<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>-->
+<!--{% elsif site.incubator_pre_survey or site.incubator_post_survey %}-->
+<!--<div class="alert alert-danger">-->
+<!--WARNING: you have defined custom pre- and/or post-survey links for-->
+<!--a workshop not configured for The Carpentries Incubator-->
+<!--(the value of `curriculum` is not set to `incubator` in `_config.yml`).-->
+<!--Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields-->
+<!--in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,-->
+<!--change the value of `carpentry` to `incubator`.-->
+<!--</div>-->
+<!--{% else %}-->
+<!--<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>-->
+<!--<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>-->
+<!--{% endif %}-->
+<!---->
 <hr/>
 
 
@@ -413,24 +402,6 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
-<p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
-</p>
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
 
 {% comment %}
 For online workshops, the section below provides:

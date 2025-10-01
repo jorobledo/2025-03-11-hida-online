@@ -1,4 +1,4 @@
----
+
 layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
@@ -275,23 +275,6 @@ Edit the text to match who can attend the workshop. For instance:
 
 <hr/>
 
-{% comment%}
-CODE OF CONDUCT
-{% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
-
-<p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>. This document also outlines how to report an incident if needed.
-</p>
-
-<p class="text-center">
-  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
-  </a>
-</p>
-<hr/>
-
-
 {% comment %}
 Collaborative Notes
 
@@ -433,3 +416,22 @@ Please check the "Setup" page of
 <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+
+
+{% comment%}
+CODE OF CONDUCT
+{% endcomment %}
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<p>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+</p>
+
+<p class="text-center">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  </a>
+</p>
+<hr/>
+
+

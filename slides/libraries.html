@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>intro slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>libraries slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7435,345 +7435,316 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3a848e27-0b4e-4bbd-9b36-91bbbbb7787a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0f04ea32-f49d-4193-8bfe-8b4fd7096517">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Plotting-and-programming-in-Python">Plotting and programming in Python<a class="anchor-link" href="#Plotting-and-programming-in-Python">¶</a></h1><p><font size="5"> Helmholtz Information &amp; Data Science Academy </font></p>
-<p><font size="4"> Tutor: Jose Robledo </font></p>
-<p><font size="2"> 03-04 November 2025 </font></p>
+<h1 id="Python-Libraries">Python Libraries<a class="anchor-link" href="#Python-Libraries">¶</a></h1>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=827a5af5-6ab3-4086-a04c-b69651e6e3bd">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c61db0f2-335f-4a19-ae35-85c14c4a196f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><ul>
-<li><p>Introduction to programming in Python 3 for people with little or no previous programming experience.</p>
-</li>
-<li><p>Based on <a href="https://swcarpentry.github.io/python-novice-gapminder/">Data Carpentry and Software Carpentry content</a></p>
-</li>
-<li><p>Create a folder locally for this course. <em>If not familiarized with bash, create folder manually.</em> If familiarized with bash, open a terminal and write:</p>
-<div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span><span class="w"> </span><span class="c1"># change to home directory</span>
-mkdir<span class="w"> </span>python_course_2025<span class="w"> </span><span class="c1"># create folder in home directory</span>
-<span class="nb">cd</span><span class="w"> </span>python_course_2025<span class="w"> </span><span class="c1"># change directory to new folder</span>
-</pre></div>
-</li>
-<li><p>Download and unzip in the folder <a href="https://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip">data files that we will need</a>.</p>
-<div class="highlight"><pre><span></span>mv<span class="w"> </span>~/Downloads/python-novice-gapminder-data.zip<span class="w"> </span><span class="c1"># bring the zip file to new folder</span>
-unzip<span class="w"> </span>python-novice-gapminder-data.zip<span class="w"> </span><span class="c1"># unzip the file in this folder.</span>
-</pre></div>
-</li>
-</ul>
-<p>We have our directory ready to work on.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=879dce04-397f-4f01-8cdb-68e827ffecb2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-is-Python?">What is Python?<a class="anchor-link" href="#What-is-Python?">¶</a></h2><p>Python is a <strong>high-level</strong>, widely used, programming language.</p>
-<p>Nice features:</p>
-<ul>
-<li>cross-platform</li>
-<li>low barrier to start and understand: focuses on readability and simplicity</li>
-<li>open-source</li>
-<li>general purpose</li>
-<li>Automatic memory management</li>
-<li>Intepreted (slower execution but faster development)</li>
-<li>A great option for science!</li>
-</ul>
-<center><img alt="No description has been provided for this image" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="10%"/></center>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5305d4d1-ef36-44e3-8594-5bd179e36e9b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>If you have python installed, then opening a terminal and writing:</p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>--version
-</pre></div>
-<p>should print your python version. If no python executable is found, this means one of two things:</p>
-<ul>
-<li>you do not have python installed</li>
-<li>you do not have the python binary in your <code>PATH</code>.</li>
-</ul>
-<p><code>PATH</code> is a bash environment variable where your terminal searches to find executable binaries. This topic is not covered in this course, but feel free to ask if you have doubts on how this works and how to fix path related problems.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f30d301a-2216-4897-bd13-7efd7608fc1d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>If you have python installed, then by executing the <code>python</code> command, you should open an interactive session (the REPL: <em>Read–Eval–Print Loop</em>), which should look something like this</p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>python
-Python<span class="w"> </span><span class="m">3</span>.9.6<span class="w"> </span><span class="o">(</span>default,<span class="w"> </span>Apr<span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">2025</span>,<span class="w"> </span><span class="m">02</span>:07:17<span class="o">)</span>
-<span class="o">[</span>Clang<span class="w"> </span><span class="m">17</span>.0.0<span class="w"> </span><span class="o">(</span>clang-1700.0.13.5<span class="o">)]</span><span class="w"> </span>on<span class="w"> </span>darwin
-Type<span class="w"> </span><span class="s2">"help"</span>,<span class="w"> </span><span class="s2">"copyright"</span>,<span class="w"> </span><span class="s2">"credits"</span><span class="w"> </span>or<span class="w"> </span><span class="s2">"license"</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>information.
-&gt;&gt;&gt;
-</pre></div>
-<p>to exit it, type <code>exit()</code> in the line with <code>&gt;&gt;&gt;</code>:</p>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt;<span class="w"> </span>exit<span class="o">()</span>
-</pre></div>
-<p>Yo should be back on your terminal environment. Mind the parenthesis <code>()</code>.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c40bafe-a6e8-4715-b7dc-89ff00b9baf9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Poll-time!"><a href="https://etc.ch/HJhz">Poll time!</a><a class="anchor-link" href="#Poll-time!">¶</a></h2>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=db684845-c7ee-4354-b9af-3382d7158498">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Python-Virtual-Environments">Python Virtual Environments<a class="anchor-link" href="#Python-Virtual-Environments">¶</a></h2><p>To get started, we need to setup our virtual environment... but what is this?</p>
-<p><a href="https://www.boardinfinity.com/blog/python-virtual-environment/"><img alt="" src="https://www.boardinfinity.com/blog/content/images/2023/04/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Untitled-Design.png"/></a></p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=59907b29-de38-4c41-901d-85a8c97ba756">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="A-word-About-Python-environments">A word About Python environments<a class="anchor-link" href="#A-word-About-Python-environments">¶</a></h2><p>Usually, a high barrier for newcomers to Python, but in my opinion it is very important to understand and use correctly.</p>
-<ul>
-<li><p>Most of Python Software is third-party open-source software, i.e. developed by the community</p>
-</li>
-<li><p>There are very few (but important) <code>built-in</code> functions in python, that we shall see. The rest is built upon this and the capabilities that Python as a programming language provides. Therefore, <em>third-party software have dependencies that must be fulfilled to be used locally</em>.</p>
-</li>
-<li><p>In Python, software is bundled in packages or libraries. Software evolve in time (sometimes for good, and sometimes for bad). New features of a software are released in new <strong>versions</strong> of its package, but also some features can be <em>deprecated</em> and therefore removed in newer versions.</p>
-</li>
-<li><p>Python environments allow us to manage <strong>dependencies</strong> in a way that we can install what we need, without breaking everything. Or in case we brake everything, we can always delete the environment and start again :)</p>
-</li>
-<li><p>Environments work as "Safe place for a specific python code, where I know it will not fail and it will find all that it needs to run smoothly"</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2cd3f83a-708a-4f1c-a837-509189fcd526">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Creating-and-activating-an-Environment">Creating and activating an Environment<a class="anchor-link" href="#Creating-and-activating-an-Environment">¶</a></h3><p>There are many ways, and different python environment managers (like <code>Anaconda</code>, <code>Micromamba</code>, <code>uv</code>, <code>virtualenvwrapper</code>, etc.). Choose one and get used to it! Just choose one open-source :)</p>
-<ul>
-<li><p>Default virtual environment manager with python 3: <a href="https://docs.python.org/3/library/venv.html"><code>venv</code> (documentation)</a></p>
-<div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>/path/to/new/virtual/environment
-<span class="nb">source</span><span class="w"> </span>/path/to/new/virtual/environment/bin/activate
-</pre></div>
-</li>
-</ul>
-<p>The first line creates an environment in <code>/path/to/new/virtual/environment</code> (change accordingly). The second line activates the created environment by sourcing its <code>activate</code> binary executable.</p>
-<p>Creating an environment should be done once, activating it should be done everytime we want to work on that environment!</p>
-<p>If you are familiarized with bash, you can alias this <code>source ...</code> line in your <code>~./bashrc</code> to have a fast activation command.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=303bd0b5-0516-4dc1-bf3f-0f616c906851">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Useful-commands-when-working-with-environments">Useful commands when working with environments<a class="anchor-link" href="#Useful-commands-when-working-with-environments">¶</a></h3><p>We will use <code>pip</code><a href="https://pypi.org/project/pip/">(documentation)</a> to manage the Python packages of our environment.</p>
-<ul>
-<li>Install a python package named <code>&lt;package&gt;</code></li>
-</ul>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>&lt;package&gt;
-</pre></div>
-<ul>
-<li>list all python packages in current environment</li>
-</ul>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>list
-</pre></div>
-<ul>
-<li>show information of package <code>&lt;package&gt;</code> if installed in environment</li>
-</ul>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>show<span class="w"> </span>&lt;package&gt;
-</pre></div>
-<ul>
-<li>show python executable that is being used in your environment setting</li>
-</ul>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>which<span class="w"> </span>python<span class="w"> </span>
-</pre></div>
-<p>.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4623997b-c84c-4b89-956a-363f625db13a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Scripting-and-Running-Python">Scripting and Running Python<a class="anchor-link" href="#Scripting-and-Running-Python">¶</a></h2><p>There are multiple ways of writing and running code in Python:</p>
-<ul>
-<li><p>From the terminal, using inline code editors and executing by command line interface.</p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>my_program.py
-</pre></div>
-</li>
-<li><p>Installing <code>jupyter notebook</code> or <code>jupyter lab</code> (IDE) and starting an instance by running:</p>
-<div class="highlight"><pre><span></span>$<span class="w"> </span>jupyter<span class="w"> </span>lab
-$<span class="w"> </span>jupyter<span class="w"> </span>notebook
-</pre></div>
-</li>
-<li><p>Installing other IDE, like <code>Visual Studio Code (VSC)</code>, <code>PyCharm</code>, etc. and running through the IDE.</p>
-</li>
-</ul>
-<p>I personally use all three options, but prefer <code>Visual Studio Code (VSC)</code> for big projects because of the versatility of its <code>Extensions</code>.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2b712cef-e582-42e0-bb6d-cca64c82586e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Installing-and-running-Jupyter-Lab">Installing and running Jupyter Lab<a class="anchor-link" href="#Installing-and-running-Jupyter-Lab">¶</a></h2><ul>
-<li><p>To install in our environment (two options):</p>
-<div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
-</pre></div>
-<p>or</p>
-<div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
-</pre></div>
-</li>
-<li><p>to run:</p>
-<div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
-</pre></div>
-</li>
-</ul>
-<p>This should open an instance of <code>jupyter lab</code> in your default browser.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b3711283-05d4-44e6-9e9b-cc0f26b216ae">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The Jupyter Lab user interface should look something like this:</p>
-<p><img alt="https://jupyterlab.readthedocs.io/en/stable/" src="https://swcarpentry.github.io/python-novice-gapminder/fig/0_jupyterlab_landing_page.png"/></p>
-<p>Find Documentation <a href="https://jupyterlab.readthedocs.io/en/stable/">here</a>.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c84fa687-ed5e-4193-9b93-21a650ae0c33">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Example showing several files open
-<img alt="" src="https://swcarpentry.github.io/python-novice-gapminder/fig/0_jupyterlab_notebook_screenshot.png"/></p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=61f459c0-6004-4842-87f5-dbf3ebab28be">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li><p>Notebooks are stored in JSON format.</p>
-</li>
-<li><p>Not easy to read, but the web interface knows how to understand it.</p>
-</li>
-<li><p>Jupyter notebooks allow mixed source code, text, images, and cell execution, amongst other benefits.</p>
-</li>
-<li><p>They are great for exploring data!</p>
-</li>
-<li><p>Notebooks have <code>Command</code> and <code>Edit</code> modes. If you press <code>Esc</code> and <code>Return</code> alternately, the outer border of your code will change from gray (Command) to blue (Edit).</p>
-</li>
-<li><p>When in Command mode (esc/gray),</p>
-<ul>
-<li>The <kbd>b</kbd> key will make a new cell below the currently selected cell.</li>
-<li>The <kbd>a</kbd> key will make one above.</li>
-<li>The <kbd>x</kbd> key will cut the current cell.</li>
-<li>The <kbd>v</kbd> key will paste the last cut cell.</li>
-<li>The <kbd>z</kbd> key will undo your last cell operation (which could be a deletion, creation, etc).</li>
-</ul>
-</li>
-<li><p>All actions can be done using the menus, but there are lots of keyboard shortcuts to speed things up.</p>
-</li>
+<h2 id="Objectives">Objectives<a class="anchor-link" href="#Objectives">¶</a></h2><ul>
+<li>Explain what software libraries are and why programmers create and use them.</li>
+<li>Write programs that import and use modules from Python's standard library.</li>
+<li>Find and read documentation for the standard library interactively (in the interpreter) and online</li>
 </ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9d3a1006-04ee-4c72-89ed-5267ff85cb26">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=895aae92-739d-4e7e-b273-44b3582485f6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Excercise-1">Excercise 1<a class="anchor-link" href="#Excercise-1">¶</a></h2><p>Open a jupyter lab instance on your local computer and create a jupyter notebook instance named <code>excercise01.ipynb</code>.</p>
-<p>Once in your new notebook and in the first cell, write (copy-paste, no editing)</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">this</span>
-</pre></div>
-<p>and excecute the cell.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=84f92a8b-7eaf-4167-9f06-da55b11930dc">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Continue">Continue<a class="anchor-link" href="#Continue">¶</a></h2><ul>
-<li><a href="./intro,html">Introduction</a></li>
-<li><a href="./variables.html">Variables in Python</a></li>
-<li><a href="./libraries.html">Libraries</a></li>
+<h2 id="Most-of-the-power-of-a-programming-language-is-in-its-libraries.">Most of the power of a programming language is in its libraries.<a class="anchor-link" href="#Most-of-the-power-of-a-programming-language-is-in-its-libraries.">¶</a></h2><ul>
+<li>A <em>library</em> is a collection of files (called <em>modules</em>) that contains
+functions for use by other programs.<ul>
+<li>May also contain data values (e.g., numerical constants) and other things.</li>
+<li>Library's contents are supposed to be related, but there's no way to enforce that.</li>
+</ul>
+</li>
+<li>The Python [standard library][stdlib] is an extensive suite of modules that comes
+with Python itself.</li>
+<li>Many additional libraries are available from [PyPI][pypi] (the Python Package Index).</li>
+<li>We will see later how to write new libraries.</li>
 </ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=76848bc1-19da-4371-a6be-34a2310945aa">
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ec177e46-495e-4b5f-9add-6d193b5fea5c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Libraries-and-modules">Libraries and modules<a class="anchor-link" href="#Libraries-and-modules">¶</a></h2><p>A library is a collection of modules, but the terms are often used
+interchangeably, especially since many libraries only consist of a single
+module, so don't worry if you mix them.</p>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bddaf864-76c0-447d-86ea-f5012b7d5087">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'pi is'</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'cos(pi) is'</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>pi is 3.141592653589793
+cos(pi) is -1.0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2f06c0d8-37a2-49b4-b9f8-db097f2182dd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Import-specific-items-from-a-library-module-to-shorten-programs.">Import specific items from a library module to shorten programs.<a class="anchor-link" href="#Import-specific-items-from-a-library-module-to-shorten-programs.">¶</a></h2><ul>
+<li>Use <code>from ... import ...</code> to load only specific items from a library module.</li>
+<li>Then refer to them directly without library name as prefix.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=03fd01ec-c7ff-41b0-acae-c23360a640bc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'cos(pi) is'</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>cos(pi) is -1.0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=08fe4594-099e-41be-a601-b037451df8d2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Create-an-alias-for-library">Create an alias for library<a class="anchor-link" href="#Create-an-alias-for-library">¶</a></h2><ul>
+<li>Use <code>import ... as ...</code> to give a library a short <em>alias</em> while importing it.</li>
+<li>Then refer to items in the library using that shortened name.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d9c287cf-0852-4ec5-93a7-2571c84bf32a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">m</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'cos(pi) is'</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>cos(pi) is 0.7071067811865476
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3a607957-1c96-439e-b845-cb3d33aa998d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'cos(pi) is'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>cos(pi) is 0.7071067811865476
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=430208d2-c149-4a8c-861c-d17234e264ae">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Use-with-caution">Use with caution<a class="anchor-link" href="#Use-with-caution">¶</a></h3><ul>
+<li>Aliases can make programs harder to understand,  since readers must learn your program's aliases.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=78648b16-4045-46bf-b7e8-e810098ccd02">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Excercise">Excercise<a class="anchor-link" href="#Excercise">¶</a></h2><ol>
+<li>Find a standard library that can help you select a random character from a string.</li>
+<li>Try writing a code snippet that uses a function from a library that selects a random character from the string</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="n">bases</span> <span class="o">=</span> <span class="s1">'ACTTGCTTGAC'</span>
+</pre></div>
+<p>Note: You may use AI assistance, but you should be able to explain what the code does!</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b378d1f4-f432-4f00-866e-8b30f18cba70">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7637843d-3259-4ce3-b754-a857020da5b9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol>
+<li>Fill in the blanks so that the program below prints <code>90.0</code></li>
+</ol>
+<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">m</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="n">____</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">____</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">____</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=91a087ae-6b54-4fa7-a9fd-ab1f2243ad20">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2bcc56ea-98ec-487e-acf1-d51168ba14e8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Takeaways">Takeaways<a class="anchor-link" href="#Takeaways">¶</a></h2><ul>
+<li>Most of the power of a programming language is in its libraries.</li>
+<li>A program must import a library module in order to use it.</li>
+<li>Use <code>help</code> to learn about the contents of a library module.</li>
+<li>Import specific items from a library to shorten programs.</li>
+<li>Create an alias for a library when importing it to shorten programs.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e25f7b69-cd6b-44ff-be18-05947417c005">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="./variables.html">Variables in Python</a></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cf7ac17a-f5a6-42ab-a07c-b6f8789ff760">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

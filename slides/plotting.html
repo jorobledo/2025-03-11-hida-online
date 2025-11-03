@@ -7581,7 +7581,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a6cedefd-6da5-4828-9e0f-26d034b097c7">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a6cedefd-6da5-4828-9e0f-26d034b097c7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7614,7 +7614,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f112ca9b-c2ad-413d-a752-0c0f01bdacee">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7727,7 +7727,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=94010d23-b628-43a5-9894-2343327bb956">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=94010d23-b628-43a5-9894-2343327bb956">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7739,6 +7739,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 <span class="n">gdp_australia</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'Australia'</span><span class="p">]</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">years</span><span class="p">,</span> <span class="n">gdp_australia</span><span class="p">,</span> <span class="s1">'g--'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -7762,7 +7763,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=69d3550a-a40e-4e02-a792-54634bc814ab">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7773,7 +7774,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ffe0bbbc-8524-44bc-a1b9-123418984d5e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ffe0bbbc-8524-44bc-a1b9-123418984d5e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7783,12 +7784,10 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">gdp_australia</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'Australia'</span><span class="p">]</span>
 <span class="n">gdp_nz</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'New Zealand'</span><span class="p">]</span>
-
 <span class="c1"># Plot with differently-colored markers.</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">years</span><span class="p">,</span> <span class="n">gdp_australia</span><span class="p">,</span> <span class="s1">'b-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Australia'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">years</span><span class="p">,</span> <span class="n">gdp_nz</span><span class="p">,</span> <span class="s1">'g-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'New Zealand'</span><span class="p">)</span>
-
-<span class="c1"># Create legend.</span>
+<span class="n">eate</span> <span class="n">legend</span><span class="o">.</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper left'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Year'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'GDP per capita ($)'</span><span class="p">)</span>
@@ -7815,7 +7814,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd331d45-e23d-4e9d-8bba-e1eeb30048d7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7830,7 +7829,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=097352bc-727e-4f92-bf3d-0b6905f799d3">
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=097352bc-727e-4f92-bf3d-0b6905f799d3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7859,7 +7858,7 @@ to convert the series of string values (<code>['1952', '1957', ..., '2007']</cod
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5c2a4789-321b-4ed3-b5b8-a5605c2a616e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7874,7 +7873,7 @@ the legend in the upper left corner of the plot, specify <code>loc='upper left'<
 </div>
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c1700641-bf75-44ae-a55e-4af7313ad9c0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7885,7 +7884,7 @@ the legend in the upper left corner of the plot, specify <code>loc='upper left'<
 </div>
 </div>
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4cae1540-3ec1-46da-8774-669ef7f599ce">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8009,7 +8008,7 @@ that variable to save the figure to file.</p>
 </div>
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f0e99b8-8689-4449-90c2-43d0f7bf135a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8023,7 +8022,7 @@ that variable to save the figure to file.</p>
 <li><a href="./tabular_data.html">Tabular data</a></li>
 <li><a href="./plotting"><strong>Plotting</strong></a></li>
 </ol>
-<h2 id="Continue-to-second-part">Continue to second part<a class="anchor-link" href="#Continue-to-second-part">¶</a></h2><ol start="7">
+<h2 id="Continue-to-second-part">Continue to second part<a class="anchor-link" href="#Continue-to-second-part">¶</a></h2><ol start="6">
 <li><strong><a href="./lists.html">Lists</a></strong></li>
 <li><a href="./loops.html">Loops</a></li>
 <li><a href="./functions.html">Functions</a></li>

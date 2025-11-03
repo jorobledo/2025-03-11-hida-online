@@ -1,17 +1,25 @@
 # Access the slides
 
 [- Link to slides First Part](https://jorobledo.github.io/2025-11-03-hida-online/slides/intro.html#/)
+
 [- Link to slides Second Part](https://jorobledo.github.io/2025-11-03-hida-online/slides/lists.html#/)
 
 # Summary
 
 [1. Introduction](https://jorobledo.github.io/2025-11-03-hida-online/slides/intro.html#/)
+
 [2. Variables in Python](https://jorobledo.github.io/2025-11-03-hida-online/slides/variables.html#/)
+
 [3. Libraries](https://jorobledo.github.io/2025-11-03-hida-online/slides/libraries.html#/)
+
 [4. Tabular data](https://jorobledo.github.io/2025-11-03-hida-online/slides/tabular_data.html#/)
+
 [5. Plotting](https://jorobledo.github.io/2025-11-03-hida-online/slides/plotting.html#/)
+
 [6. Lists](https://jorobledo.github.io/2025-11-03-hida-online/slides/lists.html#/)
+
 [7. Loops](https://jorobledo.github.io/2025-11-03-hida-online/slides/loops.html#/)
+
 [8. Functions](https://jorobledo.github.io/2025-11-03-hida-online/slides/functions.html#/)
 
 

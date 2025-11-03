@@ -1,3 +1,9 @@
+# Access the slides
+
+[- Link to slides First Part](https://jorobledo.github.io/2025-11-03-hida-online/slides/intro.html#/)
+[- Link to slides Second Part](https://jorobledo.github.io/2025-11-03-hida-online/slides/lists.html#/)
+
+
 Based on [the carpentries series material for plotting and programming in python](https://swcarpentry.github.io/python-novice-gapminder/)
 
 [![Website](https://github.com/carpentries/workshop-template/actions/workflows/website.yml/badge.svg)](https://github.com/carpentries/workshop-template/actions/workflows/website.yml)
